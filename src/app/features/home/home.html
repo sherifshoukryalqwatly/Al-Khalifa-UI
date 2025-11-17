@@ -1,6 +1,6 @@
 <div class="container">
-    <div class="row py-1 rounded-4" style="background-color: #fff;">
-        <div class="col-3">
+    <div class="row py-3 rounded-4" style="background-color: #fff;">
+        <div class="d-none d-sm-block col-sm-5 col-lg-3">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><a class="text-decoration-none text-dark" href="#">Sports shirts</a></li>
                 <li class="list-group-item"><a class="text-decoration-none text-dark" href="#">football boots</a></li>
@@ -16,9 +16,9 @@
                 <li class="list-group-item text-center"><a class="text-decoration-none text-dark" href="#">View all</a></li>
             </ul>
         </div>
-        <div class="col-9">
+        <div class="col-12 col-sm-7 col-lg-9">
             <div class="row">
-                <div class="col-9">
+                <div class="col-12 col-lg-9">
                     <div id="carouselExampleIndicators" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <a href="#">
                         <div class="card" style="width: 100%; height: calc(100%/3);">
                             <img style="width: 100%; height: 100%; border-radius: 6px;"  src="https://africastoreas.com/storage/app/public/banner/2025-09-19-68cd3211d9f81.webp" class="card-img-top" alt="...">
@@ -89,4 +89,314 @@
             </div>
         </div>
     </div>
+    <div class="recommended-for-u py-4 mb-5">
+        <div class="title">
+            <h3 class="text-center fw-bold">Recommended for you</h3>
+            <div class="d-flex justify-content-center align-items-center">
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark active" aria-current="page" href="#">Distinctive products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">best seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Latest products</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cont bg-white mt-4 p-3 rounded-4" >
+            <a class="d-block text-decoration-none text-dark p-1" style="text-align: right;" href="#">View all ></a>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bfb289e7f.webp"
+                 desc="Track Top Liverpool The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp"
+                 desc="Track Top Barca The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bcf39b16d.webp"
+                 desc="Track Top City The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bd4c3814d.webp"
+                 desc="Track Top City The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913be87cea6d.webp"
+                 desc="Track Top Arsnal The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bfb289e7f.webp"
+                 desc="Track Top Liverpool The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp"
+                 desc="Track Top Barca The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bcf39b16d.webp"
+                 desc="Track Top City The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bd4c3814d.webp"
+                 desc="Track Top City The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913be87cea6d.webp"
+                 desc="Track Top Arsnal The Green"
+                 price='375.00'
+                 [rate]="0"
+                ></app-product-card>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="top-rate mb-3">
+    <div class="cont mt-4 p-3" style="background-color: #ff5757;" >
+        <div class="container">
+            <div class="title d-flex justify-content-between py-3">
+                <h3 class="fw-bold">Top rated products</h3>
+                <div class="button">
+                    <button class="btn p-2 mx-1" style="background-color: #ec2424;"><i class="bi bi-arrow-right text-light"></i></button>
+                    <button class="btn p-2 mx-1" style="background-color: #ec2424;"><i class="bi bi-arrow-left text-light "></i></button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <app-product-card
+                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bfb289e7f.webp"
+                    desc="Track Top Liverpool The Green"
+                    price='375.00'
+                    [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp"
+                    desc="Track Top Barca The Green"
+                    price='375.00'
+                    [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bcf39b16d.webp"
+                    desc="Track Top City The Green"
+                    price='375.00'
+                    [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bd4c3814d.webp"
+                    desc="Track Top City The Green"
+                    price='375.00'
+                    [rate]="0"
+                ></app-product-card>
+                <app-product-card
+                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913be87cea6d.webp"
+                    desc="Track Top Arsnal The Green"
+                    price='375.00'
+                    [rate]="0"
+                ></app-product-card>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="only-for-u bg-white p-3 rounded-4 mb-3" >
+        <h3 class="fw-bold text-center ">Only for you</h3>
+        <div class="cont d-flex flex-wrap gap-2 justify-content-center align-items-center p-3 ">
+            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
+                <div class="box" style="width: 100px;" >
+                    <img class="rounded-2 mb-2" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-08-17-68a2193fa8fc8.webp" alt="" style="width: 100px;height: 100px;">
+                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
+                </div>
+            </a>
+            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
+                <div class="box" style="width: 100px;" >
+                    <img class="rounded-2 mb-2" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-08-11-6899e27fb44d5.webp" alt="" style="width: 100px;height: 100px;">
+                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
+                </div>
+            </a>
+            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
+                <div class="box" style="width: 100px;" >
+                    <img class="rounded-2 mb-2" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-10-08-68e6a65c19878.webp" alt="" style="width: 100px;height: 100px;">
+                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
+                </div>
+            </a>
+            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
+                <div class="box" style="width: 100px;" >
+                <img class="rounded-2 mb-2" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-08-05-6891e16ca7b4c.webp" alt="" style="width: 100px;height: 100px;">
+                <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
+            </div>
+            </a>
+            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
+                <div class="box" style="width: 100px;" >
+                    <img class="rounded-2 mb-2" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-07-31-688b58197e403.webp" alt="" style="width: 100px;height: 100px;">
+                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
+                </div>
+            </a>
+            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
+                <div class="box" style="width: 100px;" >
+                    <img class="rounded-2 mb-2" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-09-6911004a1c6b0.webp" alt="" style="width: 100px;height: 100px;">
+                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
+                </div>
+            </a>
+            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
+                <div class="box" style="width: 100px;" >
+                    <img class="rounded-2 mb-2" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-08-06-68934a153fc37.webp" alt="" style="width: 100px;height: 100px;">
+                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
+                </div>
+            </a>
+            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
+                <div class="box" style="width: 100px;" >
+                    <img class="rounded-2 mb-2" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-09-21-68d0615bdbad9.webp" alt="" style="width: 100px;height: 100px;">
+                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="club-shirts bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Club shirts</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+            
+        </div>
+    </div>
+    <div class="original-club-shirts bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Origi's club shirts...</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+
+        </div>
+    </div>
+    <div class="sports-equipment bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sports equipment</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+
+        </div>
+    </div>
+    <div class="sports-bags bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sports bags</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+
+        </div>
+    </div>
+    <div class="track-top bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Track Top</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+
+        </div>
+    </div>
+    <div class="football-boots bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Football boots</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+
+        </div>
+    </div>
+    <div class="Perfume bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Perfume</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+
+        </div>
+    </div>
+    <div class="sleepers bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sleepers</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+
+        </div>
+    </div>
+    <div class="sportswear bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sportswear</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+
+        </div>
+    </div>
+    <div class="sneakers bg-white p-3 rounded-4 mb-3">
+        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+            <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sneakers</h3>
+            <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
+        </div>
+        <div class="cont">
+
+        </div>
+    </div>
+</div>
+<div class="app-plan bg-white p-3 mt-3 ">
+    <div class="container">
+        <div class="boxs row ">
+            <div class="box col-12 col-sm-6 col-lg-3 d-block text-center d-sm-flex  ">
+                <i class="bi bi-headset fs-1 p-4 text-secondary"></i>
+                <div class="info">
+                    <p class="fw-bold fs-5 ">Support Center 24/7</p>
+                    <span class="d-block text-center text-secondary fs-6">We guarantee high-quality support</span>
+                </div>
+            </div>
+            <div class="box col-12 col-sm-6 col-lg-3 d-block text-center d-sm-flex ">
+                <i class="bi bi-wallet fs-1 p-4 text-secondary"></i>
+                <div class="info">
+                    <p class="fw-bold fs-5">Secure payment 100%</p>
+                    <span class="d-block text-center text-secondary fs-6">We guarantee safe transactions</span>
+                </div>
+            </div>
+            <div class="box col-12 col-sm-6 col-lg-3 d-block text-center d-sm-flex  ">
+                <i class="bi bi-hand-thumbs-up fs-1 p-4 text-secondary"></i>
+                <div class="info">
+                    <p class="fw-bold fs-5">Original products</p>
+                    <span class="d-block text-center text-secondary fs-6">genuine products 100%</span>
+                </div>
+            </div>
+            <div class="box col-12 col-sm-6 col-lg-3 d-block text-center d-sm-flex  ">
+                <i class="bi bi-truck fs-1 p-4 text-secondary"></i>
+                <div class="info">
+                    <p class="fw-bold fs-5">Fast shipping</p>
+                    <span class="d-block text-center text-secondary fs-6">Fast shipping nationwide</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <app-footer></app-footer>
 </div>
