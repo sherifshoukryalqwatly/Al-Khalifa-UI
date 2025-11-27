@@ -7,3 +7,52 @@
     top: 11px;
     right: 10px;
 }
+.facebook {
+    transition: 0.3s;
+}
+.facebook:hover {
+    transform: scale(1.1) rotate(20deg);
+}
+.facebook:hover i {
+    color: #000 !important;
+    transition: 0.7s;
+}
+.instagram {
+    transition: 0.3s;
+}
+.instagram:hover {
+    transform: scale(1.1) rotate(20deg);
+}
+.instagram:hover i {
+    color: #000 !important;
+    transition: 0.7s;
+}
+.tiktok {
+    transition: 0.3s;
+}
+.tiktok:hover {
+    transform: scale(1.1) rotate(20deg);
+}
+.tiktok:hover i {
+    color: #000 !important;
+    transition: 0.7s;
+}
+.phone:hover i {
+    color: #000 !important;
+    transform: rotate(-9deg);
+    transition: 0.3s;
+}
+.email {
+    transition: 0.3s;
+}
+.email:hover {
+    color: #000 !important;
+}
+.links li:hover a {
+    color: #000 !important;
+    transition: 0.3s;
+}
+.Sherif:hover {
+    color: #f6f3f3 !important;
+    transition: 0.3s;
+}

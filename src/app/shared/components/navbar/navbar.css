@@ -1,0 +1,55 @@
+.logo {
+    transition: 0.3s;
+    cursor: pointer;
+}
+.logo:hover {
+    color: red;
+}
+.home {
+    transition: 0.3s;
+}
+.home:hover {
+    color: rgb(160, 2, 2) !important; 
+    font-size: 17px !important;
+}
+.login {
+    transition: 0.3s;
+}
+.login:hover {
+    color: rgb(160, 2, 2) !important; 
+    font-size: 17px !important;
+}
+.compare {
+    transition: 0.3s;
+}
+.compare:hover {
+    color: rgb(42, 159, 0) !important; 
+    font-size: 18px !important;
+}
+.fav {
+    transition: 0.3s;
+}
+.fav:hover {
+    color: red !important; 
+    font-size: 18px !important;
+}
+.cart {
+    transition: 0.3s;
+    position: relative;
+}
+.cart::after {
+    content: "0";
+    position: absolute;
+    top: -8px;
+    right: -18px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+.cart:hover {
+    font-size: 18px !important;
+}

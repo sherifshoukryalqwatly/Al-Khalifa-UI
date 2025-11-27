@@ -1,0 +1,22 @@
+.list li a {
+    transition: 0.3s;
+}
+.list li:hover a {
+    color: rgb(160, 2, 2) !important; 
+    font-size: 17px !important;
+}
+.hecard {
+    transition: 0.3s;
+}
+.hecard:hover {
+    transform: scale(1.02);
+}
+.active {
+    color: red !important;
+}
+.onlycard {
+    transition: 0.3s;
+}
+.onlycard:hover {
+    transform: scale(1.1);
+}

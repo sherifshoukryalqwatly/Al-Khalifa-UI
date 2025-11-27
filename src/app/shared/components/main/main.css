@@ -1,0 +1,6 @@
+.phone {
+    transition: 0.3s;
+}
+.phone:hover {
+    background-color: #0000002e;
+}
