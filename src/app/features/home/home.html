@@ -79,10 +79,10 @@
         </div>
     </div>
     <div class="recommended-for-u py-4 mb-5">
-        <div class="title">
+        <div class="title reveal-up">
             <h3 class="text-center fw-bold">Recommended for you</h3>
             <div class="d-flex justify-content-center align-items-center">
-                <ul class="nav nav-underline">
+                <ul class="d-none d-md-flex nav nav-underline">
                     <li class="nav-item">
                         <a class="nav-link text-dark active" aria-current="page" href="#">Distinctive products</a>
                     </li>
@@ -97,67 +97,15 @@
         </div>
         <div class="cont bg-white mt-4 p-3 rounded-4" >
             <a class="d-block text-decoration-none text-dark p-1" style="text-align: right;" href="#">View all ></a>
-            <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bfb289e7f.webp"
-                 desc="Track Top Liverpool The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp"
-                 desc="Track Top Barca The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bcf39b16d.webp"
-                 desc="Track Top City The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bd4c3814d.webp"
-                 desc="Track Top City The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913be87cea6d.webp"
-                 desc="Track Top Arsnal The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bfb289e7f.webp"
-                 desc="Track Top Liverpool The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp"
-                 desc="Track Top Barca The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bcf39b16d.webp"
-                 desc="Track Top City The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bd4c3814d.webp"
-                 desc="Track Top City The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                 image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913be87cea6d.webp"
-                 desc="Track Top Arsnal The Green"
-                 price='375.00'
-                 [rate]="0"
-                ></app-product-card>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                @for (item of recommended; track $index) {
+                    <app-product-card
+                        [image]="item.img"
+                        [desc]="item.desc"
+                        [price]='item.price'
+                        [rate]="item.rate"
+                    ></app-product-card>
+                }
             </div>
         </div>
     </div>
@@ -165,190 +113,198 @@
 <div class="top-rate mb-3">
     <div class="cont mt-4 p-3" style="background-color: #ff5757;" >
         <div class="container">
-            <div class="title d-flex justify-content-between py-3">
+            <div class="title d-flex justify-content-between py-3 reveal-up">
                 <h3 class="fw-bold">Top rated products</h3>
                 <div class="button">
                     <button class="btn p-2 mx-1" style="background-color: #ec2424;"><i class="bi bi-arrow-right text-light"></i></button>
                     <button class="btn p-2 mx-1" style="background-color: #ec2424;"><i class="bi bi-arrow-left text-light "></i></button>
                 </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <app-product-card
-                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bfb289e7f.webp"
-                    desc="Track Top Liverpool The Green"
-                    price='375.00'
-                    [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp"
-                    desc="Track Top Barca The Green"
-                    price='375.00'
-                    [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bcf39b16d.webp"
-                    desc="Track Top City The Green"
-                    price='375.00'
-                    [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bd4c3814d.webp"
-                    desc="Track Top City The Green"
-                    price='375.00'
-                    [rate]="0"
-                ></app-product-card>
-                <app-product-card
-                    image="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913be87cea6d.webp"
-                    desc="Track Top Arsnal The Green"
-                    price='375.00'
-                    [rate]="0"
-                ></app-product-card>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                @for (item of top; track $index) {
+                    <app-product-card
+                        [image]="item.img"
+                        [desc]="item.desc"
+                        [price]='item.price'
+                        [rate]="item.rate"
+                    ></app-product-card>
+                }
             </div>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="only-for-u bg-white p-3 rounded-4 mb-3" >
-        <h3 class="fw-bold text-center ">Only for you</h3>
-        <div class="cont d-flex flex-wrap gap-2 justify-content-center align-items-center p-3 ">
-            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
-                <div class="box" style="width: 100px;" >
-                    <img class="rounded-2 mb-2 onlycard" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-08-17-68a2193fa8fc8.webp" alt="" style="width: 100px;height: 100px;">
-                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
-                </div>
-            </a>
-            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
-                <div class="box" style="width: 100px;" >
-                    <img class="rounded-2 mb-2 onlycard" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-08-11-6899e27fb44d5.webp" alt="" style="width: 100px;height: 100px;">
-                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
-                </div>
-            </a>
-            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
-                <div class="box" style="width: 100px;" >
-                    <img class="rounded-2 mb-2 onlycard" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-10-08-68e6a65c19878.webp" alt="" style="width: 100px;height: 100px;">
-                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
-                </div>
-            </a>
-            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
-                <div class="box" style="width: 100px;" >
-                <img class="rounded-2 mb-2 onlycard" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-08-05-6891e16ca7b4c.webp" alt="" style="width: 100px;height: 100px;">
-                <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
-            </div>
-            </a>
-            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
-                <div class="box" style="width: 100px;" >
-                    <img class="rounded-2 mb-2 onlycard" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-07-31-688b58197e403.webp" alt="" style="width: 100px;height: 100px;">
-                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
-                </div>
-            </a>
-            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
-                <div class="box" style="width: 100px;" >
-                    <img class="rounded-2 mb-2 onlycard" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-09-6911004a1c6b0.webp" alt="" style="width: 100px;height: 100px;">
-                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
-                </div>
-            </a>
-            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
-                <div class="box" style="width: 100px;" >
-                    <img class="rounded-2 mb-2 onlycard" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-08-06-68934a153fc37.webp" alt="" style="width: 100px;height: 100px;">
-                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
-                </div>
-            </a>
-            <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark " href="#">
-                <div class="box" style="width: 100px;" >
-                    <img class="rounded-2 mb-2 onlycard" src="https://africastoreas.com/storage/app/public/product/thumbnail/2025-09-21-68d0615bdbad9.webp" alt="" style="width: 100px;height: 100px;">
-                    <span class="d-block text-center text-danger fw-bold">370.00 LE</span>
-                </div>
-            </a>
+        <h3 class="fw-bold text-center reveal-up">Only for you</h3>
+        <div class="cont d-flex flex-wrap gap-2 justify-content-center align-items-center p-3 reveal-up">
+            @for (item of only; track $index) {
+                <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark reveal-up" href="#">
+                    <div class="box" style="width: 100px;" >
+                        <img class="rounded-2 mb-2 onlycard" [src]="item.img" alt="" style="width: 100px;height: 100px;">
+                        <span class="d-block text-center text-danger fw-bold">{{item.price}} LE</span>
+                    </div>
+                </a>
+            }
         </div>
     </div>
     <div class="club-shirts bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Club shirts</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-            
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of club; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
     <div class="original-club-shirts bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Origi's club shirts...</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of original; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
     <div class="sports-equipment bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sports equipment</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of sports; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
     <div class="sports-bags bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sports bags</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of sportsbags; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
     <div class="track-top bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Track Top</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of tracktop; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
     <div class="football-boots bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Football boots</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of football; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
     <div class="Perfume bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Perfume</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of Perfume; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
     <div class="sleepers bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sleepers</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of sleepers; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
     <div class="sportswear bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sportswear</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of sportswear; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
     <div class="sneakers bg-white p-3 rounded-4 mb-3">
-        <div class="title d-flex justify-content-between align-items-center border-bottom" >
+        <div class="title d-flex justify-content-between align-items-center border-bottom reveal-up" >
             <h3 class="fw-bold p-2" style="border-bottom: 2px solid #ec2424;">Sneakers</h3>
             <a class="d-block text-decoration-none text-dark p-1" href="#">View all ></a>
         </div>
-        <div class="cont">
-
+        <div class="d-flex justify-content-center align-items-center flex-wrap py-3">
+            @for (item of sneakers; track $index) {
+                <app-special-card
+                    [image]="item.img"
+                    [desc]="item.desc"
+                    [price]="item.price"
+                    >
+                </app-special-card>
+            }
         </div>
     </div>
 </div>

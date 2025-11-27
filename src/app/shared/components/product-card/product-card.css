@@ -33,7 +33,7 @@
 .cardicons {
   position: absolute;
   top: 0;
-  left: -50px;
+  left: -100px;
   height: 50%;
   width: calc(100% /3);
   display: flex;
@@ -51,4 +51,22 @@
 .recard:hover .cardicons{
   left: 0;
   transition: 0.4s;
+}
+.reveal-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: revealUp ease-out both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
