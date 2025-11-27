@@ -20,6 +20,9 @@
 .onlycard:hover {
     transform: scale(1.1);
 }
+.box {
+  cursor: pointer;
+}
 .reveal-up {
   opacity: 0;
   transform: translateY(50px);

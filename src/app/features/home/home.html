@@ -138,12 +138,10 @@
         <h3 class="fw-bold text-center reveal-up">Only for you</h3>
         <div class="cont d-flex flex-wrap gap-2 justify-content-center align-items-center p-3 reveal-up">
             @for (item of only; track $index) {
-                <a class="d-flex justify-content-center align-items-center text-decoration-none text-dark reveal-up" href="#">
-                    <div class="box" style="width: 100px;" >
-                        <img class="rounded-2 mb-2 onlycard" [src]="item.img" alt="" style="width: 100px;height: 100px;">
-                        <span class="d-block text-center text-danger fw-bold">{{item.price}} LE</span>
-                    </div>
-                </a>
+                <div class="box reveal-up" style="width: 100px;" >
+                    <img class="rounded-2 mb-2 onlycard" [src]="item.img" alt="" style="width: 100px;height: 100px;">
+                    <span class="d-block text-center text-danger fw-bold">{{item.price}} LE</span>
+                </div>
             }
         </div>
     </div>

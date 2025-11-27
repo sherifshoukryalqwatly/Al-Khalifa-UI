@@ -4,12 +4,13 @@
   text-overflow: ellipsis; 
 }
 .recard {
-  transition: 0.3s ease-in-out;
+  transition: 0.3s;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .recard:hover {
-  transform: scale(1.03);
+  transform: scale(1.03) !important;
 }
 .recardim {
   position: relative;
