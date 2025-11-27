@@ -5,6 +5,16 @@
 .logo:hover {
     color: red;
 }
+.oo {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.oo:hover {
+    color: #000 !important;
+}
+.seicon {
+    cursor: pointer;
+}
 .home {
     transition: 0.3s;
 }

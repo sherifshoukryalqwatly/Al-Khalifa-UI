@@ -142,7 +142,7 @@ export class Home {
   ]
   club  = [
   { img: "https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp",desc : "Zamalek's imaginary black T-shirt",price:"400.00"},
-  { img: "https://africastoreas.com/storage/app/public/product/thumbnail/2025-07-29-6888cb9ce8f6c.webp",desc : "Zamalek's imaginary black T-shirt",price:"400.00"},
+  { img: "https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp",desc : "Zamalek's imaginary black T-shirt",price:"400.00"},
   { img: "https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp",desc : "Zamalek's imaginary black T-shirt",price:"400.00"},
   { img: "https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp",desc : "Zamalek's imaginary black T-shirt",price:"400.00"},
   { img: "https://africastoreas.com/storage/app/public/product/thumbnail/2025-11-12-6913bb329a354.webp",desc : "Zamalek's imaginary black T-shirt",price:"400.00"},
